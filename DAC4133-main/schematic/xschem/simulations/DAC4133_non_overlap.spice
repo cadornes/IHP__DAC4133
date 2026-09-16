@@ -1,0 +1,43 @@
+** sch_path: /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/schematic/xschem/DAC4133_non_overlap.sch
+**.subckt DAC4133_non_overlap AVDD AVSS i_signb i_sign o_sign o_signb
+*.iopin AVDD
+*.iopin AVSS
+*.iopin i_sign
+*.iopin i_signb
+*.iopin o_sign
+*.iopin o_signb
+x5 AVDD AVSS i_sign xb xa DAC4133_nand
+x6 xa o_sign AVDD AVSS DAC4133_inv
+x3 AVDD AVSS i_signb xa xb DAC4133_nand
+x1 xb o_signb AVDD AVSS DAC4133_inv
+**.ends
+
+* expanding   symbol:  DAC4133_nand.sym # of pins=5
+** sym_path: /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/schematic/xschem/DAC4133_nand.sym
+** sch_path: /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/schematic/xschem/DAC4133_nand.sch
+.subckt DAC4133_nand VDD VSS A B Y
+*.opin Y
+*.ipin A
+*.iopin VDD
+*.iopin VSS
+*.ipin B
+XMN0 net1 B VSS VSS sg13_lv_nmos w=1.44u l=130.00n ng=2 m=1 mm_ok=1
+XMP0 Y B VDD VDD sg13_lv_pmos w=2.24u l=130.00n ng=2 m=1 mm_ok=1
+XMN1 Y A net1 VSS sg13_lv_nmos w=1.44u l=130.00n ng=2 m=1 mm_ok=1
+XMP1 Y A VDD VDD sg13_lv_pmos w=2.24u l=130.00n ng=2 m=1 mm_ok=1
+.ends
+
+
+* expanding   symbol:  DAC4133_inv.sym # of pins=4
+** sym_path: /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/schematic/xschem/DAC4133_inv.sym
+** sch_path: /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/schematic/xschem/DAC4133_inv.sch
+.subckt DAC4133_inv A Y VDD VSS
+*.opin Y
+*.ipin A
+*.iopin VDD
+*.iopin VSS
+XMN0 Y A VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1 m=1 mm_ok=1
+XMP0 Y A VDD VDD sg13_lv_pmos w=1.12u l=130.00n ng=1 m=1 mm_ok=1
+.ends
+
+.end

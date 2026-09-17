@@ -5,6 +5,8 @@
 x1 AVDD CC_P i_en CC_N AVSS IREF i_sign VBIAS i_signb ISUM en_bb DAC4133_output_ctrl_sw
 x2 AVDD AVSS en_bb DATA[17] DATA[16] DATA[15] DATA[14] DATA[13] DATA[12] DATA[11] DATA[10] DATA[9] DATA[8] DATA[7] DATA[6] DATA[5]
 + DATA[4] DATA[3] DATA[2] DATA[1] DATA[0] VBIAS ISUM DAC4133_dac_bits
+DD1 AVSS VBIAS dantenna l=1u w=1u
+DD2 AVSS DATA[0] dantenna l=1u w=1u
 .ends
 
 * expanding   symbol:  DAC4133_output_ctrl_sw.sym # of pins=11

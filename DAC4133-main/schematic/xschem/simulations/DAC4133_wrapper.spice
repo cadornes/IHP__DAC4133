@@ -1,0 +1,90 @@
+** sch_path: /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/schematic/xschem/DAC4133_wrapper.sch
+.subckt DAC4133_wrapper ui_PAD[0] ui_PAD[1] ui_PAD[2] ui_PAD[3] analog_io[0] analog_io[1] analog_io[2] analog_io[3] analog_io[4]
++ VDD VSS IOVDD IOVSS analog_io_padres[4] analog_io_padres[2] ui_PAD2CORE[0] ui_PAD2CORE[1] ui_PAD2CORE[2] ui_PAD2CORE[3]
++ analog_io_padres[1] SUB analog_io_padres[0] analog_io_padres[3]
+*.PININFO VSS:B VDD:B IOVDD:B IOVSS:B analog_io[19:0]:B ui_PAD[14:0]:B uo_PAD:B analog_io_padres[4:0]:B ui_PAD2CORE[14:0]:B
+*+ uo_CORE2PAD:B analog_io_padres[19:14]:B
+*  x5 -  sg13g2_Corner_noptap  IS MISSING !!!!
+*  x6 -  sg13g2_IOPadRF  IS MISSING !!!!
+*  x10 -  sg13g2_IOPadVss  IS MISSING !!!!
+*  x11[7],x11[6],x11[5],x11[4],x11[3],x11[2],x11[1],x11[0] -  sg13g2_Filler4000  IS MISSING !!!!
+*  x12[7],x12[6],x12[5],x12[4],x12[3],x12[2],x12[1],x12[0] -  sg13g2_Filler1000  IS MISSING !!!!
+*  x13[7],x13[6],x13[5],x13[4],x13[3],x13[2],x13[1],x13[0] -  sg13g2_Filler400  IS MISSING !!!!
+*  x14[7],x14[6],x14[5],x14[4],x14[3],x14[2],x14[1],x14[0] -  sg13g2_Filler200  IS MISSING !!!!
+*  x15 -  sg13g2_IOPadVdd  IS MISSING !!!!
+*
+*+  x16[39],x16[38],x16[37],x16[36],x16[35],x16[34],x16[33],x16[32],x16[31],x16[30],x16[29],x16[28],x16[27],x16[26],x16[25],x16[24],x16[23],x16[22],x16[21],x16[20],x16[19],x16[18],x16[17],x16[16],x16[15],x16[14],x16[13],x16[12],x16[11],x16[10],x16[9],x16[8],x16[7],x16[6],x16[5],x16[4],x16[3],x16[2],x16[1],x16[0] -  sg13g2_Filler4000  IS MISSING !!!!
+*
+*+  x17[39],x17[38],x17[37],x17[36],x17[35],x17[34],x17[33],x17[32],x17[31],x17[30],x17[29],x17[28],x17[27],x17[26],x17[25],x17[24],x17[23],x17[22],x17[21],x17[20],x17[19],x17[18],x17[17],x17[16],x17[15],x17[14],x17[13],x17[12],x17[11],x17[10],x17[9],x17[8],x17[7],x17[6],x17[5],x17[4],x17[3],x17[2],x17[1],x17[0] -  sg13g2_Filler400  IS MISSING !!!!
+*  x1 -  sg13g2_IOPadRF  IS MISSING !!!!
+*  x2 -  sg13g2_IOPadRF  IS MISSING !!!!
+*  x3 -  sg13g2_IOPadRF  IS MISSING !!!!
+*  x4 -  sg13g2_IOPadRF  IS MISSING !!!!
+*  x11 -  sg13g2_IOPadRF  IS MISSING !!!!
+*  x12 -  sg13g2_IOPadRF  IS MISSING !!!!
+*  x13 -  sg13g2_IOPadRF  IS MISSING !!!!
+*  x14 -  sg13g2_IOPadRF  IS MISSING !!!!
+*  x16 -  sg13g2_IOPadIOVdd  IS MISSING !!!!
+*  x17 -  sg13g2_IOPadIOVss  IS MISSING !!!!
+*  x7 -  sg13g2_Corner_noptap  IS MISSING !!!!
+*  x8 -  sg13g2_IOPadAnalog  IS MISSING !!!!
+*  x9 -  sg13g2_IOPadVss  IS MISSING !!!!
+*  x18 -  sg13g2_IOPadVdd  IS MISSING !!!!
+*  x19 -  sg13g2_IOPadAnalog  IS MISSING !!!!
+*  x20 -  sg13g2_IOPadAnalog  IS MISSING !!!!
+*  x21 -  sg13g2_IOPadAnalog  IS MISSING !!!!
+*  x22 -  sg13g2_IOPadIn  IS MISSING !!!!
+*  x23 -  sg13g2_IOPadIn  IS MISSING !!!!
+*  x24 -  sg13g2_IOPadIn  IS MISSING !!!!
+*  x25 -  sg13g2_IOPadIn  IS MISSING !!!!
+*  x26 -  sg13g2_IOPadIn  IS MISSING !!!!
+*  x27 -  sg13g2_IOPadIOVdd  IS MISSING !!!!
+*  x28 -  sg13g2_IOPadIOVss  IS MISSING !!!!
+* noconn VSS
+* noconn VDD
+* noconn IOVDD
+* noconn IOVSS
+* noconn SUB
+*  x29 -  sg13g2_Corner_noptap  IS MISSING !!!!
+*  x30 -  sg13g2_IOPadAnalog  IS MISSING !!!!
+*  x31 -  sg13g2_IOPadIOVdd  IS MISSING !!!!
+*  x32 -  sg13g2_IOPadIOVss  IS MISSING !!!!
+*  x33 -  sg13g2_IOPadAnalog  IS MISSING !!!!
+*  x34 -  sg13g2_IOPadIn  IS MISSING !!!!
+*  x35 -  sg13g2_IOPadOut30mA  IS MISSING !!!!
+*  x36 -  sg13g2_IOPadIn  IS MISSING !!!!
+*  x37 -  sg13g2_IOPadIn  IS MISSING !!!!
+*  x38 -  sg13g2_IOPadIn  IS MISSING !!!!
+*  x39 -  sg13g2_IOPadIn  IS MISSING !!!!
+*  x40 -  sg13g2_IOPadIn  IS MISSING !!!!
+*  x41 -  sg13g2_IOPadVdd  IS MISSING !!!!
+*  x42 -  sg13g2_IOPadVss  IS MISSING !!!!
+* noconn VSS
+* noconn VDD
+* noconn IOVDD
+* noconn IOVSS
+* noconn SUB
+*  x43 -  sg13g2_Corner_noptap  IS MISSING !!!!
+*  x44 -  sg13g2_IOPadAnalog  IS MISSING !!!!
+*  x45 -  sg13g2_IOPadIOVdd  IS MISSING !!!!
+*  x46 -  sg13g2_IOPadIOVss  IS MISSING !!!!
+*  x47 -  sg13g2_IOPadAnalog  IS MISSING !!!!
+*  x48 -  sg13g2_IOPadAnalog  IS MISSING !!!!
+*  x49 -  sg13g2_IOPadAnalog  IS MISSING !!!!
+*  x50 -  sg13g2_IOPadAnalog  IS MISSING !!!!
+*  x51 -  sg13g2_IOPadIn  IS MISSING !!!!
+*  x52 -  sg13g2_IOPadIn  IS MISSING !!!!
+*  x53 -  sg13g2_IOPadIn  IS MISSING !!!!
+*  x54 -  sg13g2_IOPadIn  IS MISSING !!!!
+*  x55 -  sg13g2_IOPadVdd  IS MISSING !!!!
+*  x56 -  sg13g2_IOPadVss  IS MISSING !!!!
+* noconn VSS
+* noconn VDD
+* noconn IOVDD
+* noconn IOVSS
+* noconn SUB
+?
+?
+*  x1[7],x1[6],x1[5],x1[4],x1[3],x1[2],x1[1],x1[0] -  sg13g2_Filler4000  IS MISSING !!!!
+*  x2[7],x2[6],x2[5],x2[4],x2[3],x2[2],x2[1],x2[0] -  sg13g2_Filler400  IS MISSING !!!!
+.ends

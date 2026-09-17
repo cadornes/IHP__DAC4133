@@ -32,6 +32,12 @@ N 890 -1220 950 -1220 {lab=VBIAS}
 N 890 -1260 950 -1260 {lab=DATA[17:0]}
 N 1100 -1360 1100 -1320 {lab=AVDD}
 N 940 -1580 990 -1580 {lab=VBIAS}
+N 780 -1100 840 -1100 {lab=VBIAS}
+N 840 -1100 840 -1080 {lab=VBIAS}
+N 840 -1020 840 -940 {lab=AVSS}
+N 920 -1120 980 -1120 {lab=DATA[17:0]}
+N 980 -1120 980 -1100 {lab=DATA[17:0]}
+N 980 -1040 980 -960 {lab=AVSS}
 C {iopin.sym} 940 -1660 2 0 {name=p721 lab=AVDD}
 C {iopin.sym} 940 -1630 2 0 {name=p722 lab=AVSS}
 C {iopin.sym} 1200 -1660 2 0 {name=p724 lab=i_en}
@@ -61,3 +67,19 @@ C {lab_wire.sym} 1750 -1280 0 1 {name=p35 sig_type=std_logic lab=VBIAS}
 C {lab_wire.sym} 1750 -1240 0 1 {name=p45 sig_type=std_logic lab=en_bb}
 C {iopin.sym} 940 -1580 2 0 {name=p13 lab=VBIAS}
 C {DAC4133_dac_bits.sym} 1100 -1240 0 0 {name=x2}
+C {sg13g2_pr/dantenna.sym} 840 -1050 0 0 {name=D1
+model=dantenna
+l=1u
+w=1u
+spiceprefix=X
+}
+C {lab_wire.sym} 840 -950 0 1 {name=p2 sig_type=std_logic lab=AVSS}
+C {lab_wire.sym} 790 -1100 0 0 {name=p11 sig_type=std_logic lab=VBIAS}
+C {sg13g2_pr/dantenna.sym} 980 -1070 0 0 {name=D2
+model=dantenna
+l=1u
+w=1u
+spiceprefix=X
+}
+C {lab_wire.sym} 980 -970 0 1 {name=p12 sig_type=std_logic lab=AVSS}
+C {lab_wire.sym} 950 -1120 0 0 {name=p14 sig_type=std_logic lab=DATA[0]}

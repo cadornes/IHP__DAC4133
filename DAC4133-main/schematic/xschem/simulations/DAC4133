@@ -1,23 +1,25 @@
-** sch_path: /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/schematic/xschem/DAC4133.sch
-.subckt DAC4133 VSS VDD ui_PAD2CORE[1] ui_PAD2CORE[0] ui_PAD2CORE[2] analog_io_padres[1] analog_io_padres[0] analog_io_padres[3]
-+ analog_io_padres[2] analog_io_padres[4]
+** sch_path: /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/schematic/xschem/DAC4133_analog.sch
+.subckt DAC4133_analog VSS VDD ui_PAD2CORE[1] ui_PAD2CORE[0] ui_PAD2CORE[2] analog_io_padres[1] analog_io_padres[0]
++ analog_io_padres[3] analog_io_padres[2] analog_io_padres[4]
 *.PININFO VSS:B VDD:B ui_PAD2CORE[1]:B ui_PAD2CORE[0]:B ui_PAD2CORE[2]:B analog_io_padres[1]:B analog_io_padres[0]:B
 *+ analog_io_padres[3]:B analog_io_padres[2]:B analog_io_padres[4]:B
 x1 ui_PAD2CORE[0] ui_PAD2CORE[1] ui_PAD2CORE[2] analog_io_padres[0] analog_io_padres[1] analog_io_padres[2] analog_io_padres[3]
-+ analog_io_padres[4] VDD VSS DAC4133_top
-DD1 AVSS ui_PAD2CORE[0] dantenna l=1u w=1u
-DD2 AVSS ui_PAD2CORE[1] dantenna l=1u w=1u
++ analog_io_padres[4] VDD VSS DAC4133_top_analog
 .ends
 
-* expanding   symbol:  DAC4133_top.sym # of pins=10
-** sym_path: /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/schematic/xschem/DAC4133_top.sym
-** sch_path: /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/schematic/xschem/DAC4133_top.sch
-.subckt DAC4133_top EN_AN RST CLK VBIAS_CAP IREF CC_N CC_P DVDD AVDD VSS
+* expanding   symbol:  DAC4133_top_analog.sym # of pins=10
+** sym_path: /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/schematic/xschem/DAC4133_top_analog.sym
+** sch_path: /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/schematic/xschem/DAC4133_top_analog.sch
+.subckt DAC4133_top_analog EN_AN RST CLK VBIAS_CAP IREF CC_N CC_P DVDD AVDD VSS
 *.PININFO AVDD:B IREF:B VBIAS_CAP:B DVDD:B VSS:B EN_AN:B RST:B CLK:B CC_P:B CC_N:B
 x1 AVDD VSS EN_AN DATA[17] DATA[16] DATA[15] DATA[14] DATA[13] DATA[12] DATA[11] DATA[10] DATA[9] DATA[8] DATA[7] DATA[6] DATA[5]
 + DATA[4] DATA[3] DATA[2] DATA[1] DATA[0] IREF sign_dig signb_dig CC_P CC_N VBIAS_CAP DAC4133_dac_top
-x2 DVDD VSS RST DATA[17] DATA[16] DATA[15] DATA[14] DATA[13] DATA[12] DATA[11] DATA[10] DATA[9] DATA[8] DATA[7] DATA[6] DATA[5]
-+ DATA[4] DATA[3] DATA[2] DATA[1] DATA[0] CLK signb_dig sign_dig DAC4133_digital_top
+* noconn DVDD
+* noconn DATA[17:0]
+* noconn sign_dig
+* noconn signb_dig
+* noconn RST
+* noconn CLK
 .ends
 
 
@@ -32,17 +34,6 @@ x2 AVDD AVSS en_bb DATA[17] DATA[16] DATA[15] DATA[14] DATA[13] DATA[12] DATA[11
 + DATA[4] DATA[3] DATA[2] DATA[1] DATA[0] VBIAS ISUM DAC4133_dac_bits
 DD1 AVSS VBIAS dantenna l=1u w=1u
 DD2 AVSS DATA[0] dantenna l=1u w=1u
-.ends
-
-
-* expanding   symbol:  DAC4133_digital_top.sym # of pins=7
-** sym_path: /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/schematic/xschem/DAC4133_digital_top.sym
-** sch_path: /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/schematic/xschem/DAC4133_digital_top.sch
-.subckt DAC4133_digital_top DVDD DVSS rst DATA[17] DATA[16] DATA[15] DATA[14] DATA[13] DATA[12] DATA[11] DATA[10] DATA[9] DATA[8]
-+ DATA[7] DATA[6] DATA[5] DATA[4] DATA[3] DATA[2] DATA[1] DATA[0] clk o_signB o_sign
-*.PININFO DVDD:B DVSS:B rst:B DATA[17:0]:B clk:B o_sign:B o_signB:B
-x1 DVDD DVSS rst DATA[17] DATA[16] DATA[15] DATA[14] DATA[13] DATA[12] DATA[11] DATA[10] DATA[9] DATA[8] DATA[7] DATA[6] DATA[5]
-+ DATA[4] DATA[3] DATA[2] DATA[1] DATA[0] clk o_signB o_sign DigitalSine
 .ends
 
 

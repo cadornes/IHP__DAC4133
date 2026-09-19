@@ -7,7 +7,7 @@ F {}
 E {}
 N 920 -1240 920 -1200 {lab=AVDD}
 N 730 -1120 770 -1120 {lab=en_bb}
-N 1070 -1120 1110 -1120 {lab=AVSS}
+N 1070 -1120 1110 -1120 {lab=#net1}
 N 920 -1040 920 -1000 {lab=AVSS}
 N 680 -1140 770 -1140 {lab=VBIAS}
 N 680 -1140 680 -1000 {lab=VBIAS}
@@ -130,11 +130,11 @@ N 4030 -830 4120 -830 {lab=VBIAS}
 N 4030 -530 4120 -530 {lab=VBIAS}
 N 980 -240 1040 -240 {lab=AVDD}
 N 980 -220 1110 -220 {lab=AVSS}
+N 1110 -1060 1110 -1020 {lab=AVSS}
 C {lab_wire.sym} 850 -810 0 0 {name=p13 sig_type=std_logic lab=VBIAS}
 C {lab_wire.sym} 920 -1010 0 0 {name=p18 sig_type=std_logic lab=AVSS}
 C {lab_wire.sym} 920 -1230 0 0 {name=p19 sig_type=std_logic lab=AVDD}
 C {lab_wire.sym} 760 -1120 0 0 {name=p21 sig_type=std_logic lab=en_bb}
-C {lab_wire.sym} 1090 -1120 0 1 {name=p28 sig_type=std_logic lab=AVSS}
 C {iopin.sym} 940 -1630 2 0 {name=p721 lab=AVDD}
 C {iopin.sym} 940 -1600 2 0 {name=p722 lab=AVSS}
 C {iopin.sym} 940 -1570 2 0 {name=p724 lab=en_bb}
@@ -272,3 +272,14 @@ C {DAC4133_dac_unit_DMY.sym} 830 -230 0 0 {name=x1[1..57]}
 C {lab_wire.sym} 1100 -220 0 1 {name=p50 sig_type=std_logic lab=AVSS}
 C {lab_wire.sym} 1030 -240 0 1 {name=p68 sig_type=std_logic lab=AVDD
 }
+C {sg13g2_pr/rsil.sym} 1110 -1090 0 0 {name=R1[7:0]
+w=0.5e-6
+l=0.5e-6
+model=rsil
+body=AVSS
+spiceprefix=X
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
+}
+C {lab_wire.sym} 1110 -1030 0 0 {name=p2 sig_type=std_logic lab=AVSS}

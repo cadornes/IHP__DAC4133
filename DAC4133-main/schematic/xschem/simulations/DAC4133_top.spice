@@ -26,7 +26,9 @@ DD2 AVSS DATA[0] dantenna l=1u w=1u
 ** sch_path: /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/schematic/xschem/DAC4133_digital_top.sch
 .subckt DAC4133_digital_top DVDD DVSS rst DATA[17] DATA[16] DATA[15] DATA[14] DATA[13] DATA[12] DATA[11] DATA[10] DATA[9] DATA[8]
 + DATA[7] DATA[6] DATA[5] DATA[4] DATA[3] DATA[2] DATA[1] DATA[0] clk o_signB o_sign
-
+*.PININFO DVDD:B DVSS:B rst:B DATA[17:0]:B clk:B o_sign:B o_signB:B
+x1 DVDD DVSS rst DATA[17] DATA[16] DATA[15] DATA[14] DATA[13] DATA[12] DATA[11] DATA[10] DATA[9] DATA[8] DATA[7] DATA[6] DATA[5]
++ DATA[4] DATA[3] DATA[2] DATA[1] DATA[0] clk o_signB o_sign DigitalSine
 .ends
 
 

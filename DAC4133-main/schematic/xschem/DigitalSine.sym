@@ -3,7 +3,7 @@ G {}
 K {type=subcircuit
 format="@name @pinlist @symname"
 template="name=x1"
-spice_sym_def=".include \\"/home/designer/shared/libs/IHP__DAC4133/DAC4133-main/netlist/lvs/DigitalSine_com_stdcells.spice\\""}
+spice_sym_def=".include \\"../../../MPC2585-main/netlist/schematic/DigitalSine_com_stdcells.spice\\""}
 V {}
 S {}
 F {}

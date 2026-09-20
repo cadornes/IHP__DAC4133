@@ -269,7 +269,13 @@ R1[0] net1_0 AVSS 396.9 $SUB=AVSS $[rppd] w=0.5e-6 l=0.5e-6 b=0
 
 * expanding   symbol:  DigitalSine.sym # of pins=7
 ** sym_path: /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/schematic/xschem/DigitalSine.sym
-.include "/home/designer/shared/libs/IHP__DAC4133/DAC4133-main/netlist/lvs/DigitalSine_com_stdcells.spice"
+** sch_path: /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/schematic/xschem/DigitalSine.sch
+.subckt DigitalSine VGND VPWR clk rst sign signB sine_out[17] sine_out[16] sine_out[15] sine_out[14] sine_out[13] sine_out[12]
++ sine_out[11] sine_out[10] sine_out[9] sine_out[8] sine_out[7] sine_out[6] sine_out[5] sine_out[4] sine_out[3] sine_out[2] sine_out[1]
++ sine_out[0]
+*.PININFO clk:I rst:I VPWR:B VGND:B sine_out[17:0]:O sign:O signB:O
+.ends
+
 
 * expanding   symbol:  DAC4133_dsw.sym # of pins=6
 ** sym_path: /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/schematic/xschem/DAC4133_dsw.sym

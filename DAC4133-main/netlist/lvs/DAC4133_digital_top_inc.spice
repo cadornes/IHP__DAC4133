@@ -1,0 +1,4 @@
+* wrapper com .include
+.include /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/netlist/lvs/sg13g2_stdcell_lvs.cdl
+.include /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/netlist/lvs/DigitalSine_ordered.spice
+.include /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/netlist/lvs/DAC4133_digital_top_sem_stub.spice

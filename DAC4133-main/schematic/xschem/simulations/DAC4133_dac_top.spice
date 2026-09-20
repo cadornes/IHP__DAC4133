@@ -5,7 +5,6 @@
 x1 AVDD CC_P i_en CC_N AVSS IREF i_sign VBIAS i_signb ISUM en_bb DAC4133_output_ctrl_sw
 x2 AVDD AVSS en_bb DATA[17] DATA[16] DATA[15] DATA[14] DATA[13] DATA[12] DATA[11] DATA[10] DATA[9] DATA[8] DATA[7] DATA[6] DATA[5]
 + DATA[4] DATA[3] DATA[2] DATA[1] DATA[0] VBIAS ISUM DAC4133_dac_bits
-DD1 AVSS VBIAS dantenna l=1u w=1u
 DD2 AVSS DATA[0] dantenna l=1u w=1u
 .ends
 
@@ -155,14 +154,14 @@ xb17[3] AVDD AVSS VBIAS en_bb DATA[17] ISUM DAC4133_dac_unit
 xb17[2] AVDD AVSS VBIAS en_bb DATA[17] ISUM DAC4133_dac_unit
 xb17[1] AVDD AVSS VBIAS en_bb DATA[17] ISUM DAC4133_dac_unit
 xb17[0] AVDD AVSS VBIAS en_bb DATA[17] ISUM DAC4133_dac_unit
-x1[7] AVDD AVSS VBIAS en_bb AVSS VBIAS DAC4133_dac_unit
-x1[6] AVDD AVSS VBIAS en_bb AVSS VBIAS DAC4133_dac_unit
-x1[5] AVDD AVSS VBIAS en_bb AVSS VBIAS DAC4133_dac_unit
-x1[4] AVDD AVSS VBIAS en_bb AVSS VBIAS DAC4133_dac_unit
-x1[3] AVDD AVSS VBIAS en_bb AVSS VBIAS DAC4133_dac_unit
-x1[2] AVDD AVSS VBIAS en_bb AVSS VBIAS DAC4133_dac_unit
-x1[1] AVDD AVSS VBIAS en_bb AVSS VBIAS DAC4133_dac_unit
-x1[0] AVDD AVSS VBIAS en_bb AVSS VBIAS DAC4133_dac_unit
+x1[7] AVDD AVSS VBIAS en_bb net1_7 VBIAS DAC4133_dac_unit
+x1[6] AVDD AVSS VBIAS en_bb net1_6 VBIAS DAC4133_dac_unit
+x1[5] AVDD AVSS VBIAS en_bb net1_5 VBIAS DAC4133_dac_unit
+x1[4] AVDD AVSS VBIAS en_bb net1_4 VBIAS DAC4133_dac_unit
+x1[3] AVDD AVSS VBIAS en_bb net1_3 VBIAS DAC4133_dac_unit
+x1[2] AVDD AVSS VBIAS en_bb net1_2 VBIAS DAC4133_dac_unit
+x1[1] AVDD AVSS VBIAS en_bb net1_1 VBIAS DAC4133_dac_unit
+x1[0] AVDD AVSS VBIAS en_bb net1_0 VBIAS DAC4133_dac_unit
 x11 AVDD AVSS DAC4133_dac_unit_DMY
 x12 AVDD AVSS DAC4133_dac_unit_DMY
 x13 AVDD AVSS DAC4133_dac_unit_DMY
@@ -220,6 +219,14 @@ x154 AVDD AVSS DAC4133_dac_unit_DMY
 x155 AVDD AVSS DAC4133_dac_unit_DMY
 x156 AVDD AVSS DAC4133_dac_unit_DMY
 x157 AVDD AVSS DAC4133_dac_unit_DMY
+RR1[7] net1_7 AVSS 396.9 $SUB=AVSS $[rppd] w=0.5e-6 l=0.5e-6 b=0
+R1[6] net1_6 AVSS 396.9 $SUB=AVSS $[rppd] w=0.5e-6 l=0.5e-6 b=0
+R1[5] net1_5 AVSS 396.9 $SUB=AVSS $[rppd] w=0.5e-6 l=0.5e-6 b=0
+R1[4] net1_4 AVSS 396.9 $SUB=AVSS $[rppd] w=0.5e-6 l=0.5e-6 b=0
+R1[3] net1_3 AVSS 396.9 $SUB=AVSS $[rppd] w=0.5e-6 l=0.5e-6 b=0
+R1[2] net1_2 AVSS 396.9 $SUB=AVSS $[rppd] w=0.5e-6 l=0.5e-6 b=0
+R1[1] net1_1 AVSS 396.9 $SUB=AVSS $[rppd] w=0.5e-6 l=0.5e-6 b=0
+R1[0] net1_0 AVSS 396.9 $SUB=AVSS $[rppd] w=0.5e-6 l=0.5e-6 b=0
 .ends
 
 

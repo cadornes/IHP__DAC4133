@@ -272,14 +272,15 @@ C {DAC4133_dac_unit_DMY.sym} 830 -230 0 0 {name=x1[1..57]}
 C {lab_wire.sym} 1100 -220 0 1 {name=p50 sig_type=std_logic lab=AVSS}
 C {lab_wire.sym} 1030 -240 0 1 {name=p68 sig_type=std_logic lab=AVDD
 }
-C {sg13g2_pr/rsil.sym} 1110 -1090 0 0 {name=R1[7:0]
+C {lab_wire.sym} 1110 -1030 0 0 {name=p2 sig_type=std_logic lab=AVSS}
+C {sg13g2_pr/rppd.sym} 1110 -1090 0 0 {name=R1[7:0]
 w=0.5e-6
 l=0.5e-6
-model=rsil
+model=rppd
 body=AVSS
 spiceprefix=X
+b=0
  m=1
   mm_ok=1
-value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
+value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
 }
-C {lab_wire.sym} 1110 -1030 0 0 {name=p2 sig_type=std_logic lab=AVSS}

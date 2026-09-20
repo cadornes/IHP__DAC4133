@@ -1,0 +1,7 @@
+lvs_run_*/
+drc_run_*/
+*_extracted.cir
+*_backup.gds
+*_lvs_deep_clean.gds
+__pycache__/
+*.pyc

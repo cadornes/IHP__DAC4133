@@ -1,0 +1,4 @@
+* wrapper LVS: std cells + digital + topo
+.include /opt/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
+.include /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/netlist/lvs/DigitalSine_ordered.spice
+.include /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/netlist/lvs/DAC4133_digital_top_sem_stub.spice

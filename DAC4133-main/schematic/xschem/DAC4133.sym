@@ -19,14 +19,14 @@ L 7 -150 -40 -130 -40 {}
 L 7 -150 -160 -130 -160 {}
 B 5 -152.5 197.5 -147.5 202.5 {name=VDD dir=inout}
 B 5 -152.5 157.5 -147.5 162.5 {name=VSS dir=inout}
-B 5 -152.5 -202.5 -147.5 -197.5 {name=analog_io_padres[4] dir=inout}
-B 5 -152.5 -122.5 -147.5 -117.5 {name=analog_io_padres[2] dir=inout}
+B 5 -152.5 -202.5 -147.5 -197.5 {name=analog_io[4] dir=inout}
+B 5 -152.5 -122.5 -147.5 -117.5 {name=analog_io[2] dir=inout}
 B 5 -152.5 117.5 -147.5 122.5 {name=ui_PAD2CORE[0] dir=inout}
 B 5 -152.5 77.5 -147.5 82.5 {name=ui_PAD2CORE[1] dir=inout}
 B 5 -152.5 37.5 -147.5 42.5 {name=ui_PAD2CORE[2] dir=inout}
 B 5 -152.5 -82.5 -147.5 -77.5 {name=analog_io_padres[1] dir=inout}
 B 5 -152.5 -42.5 -147.5 -37.5 {name=analog_io_padres[0] dir=inout}
-B 5 -152.5 -162.5 -147.5 -157.5 {name=analog_io_padres[3] dir=inout}
+B 5 -152.5 -162.5 -147.5 -157.5 {name=analog_io[3] dir=inout}
 P 4 5 130 -230 -130 -230 -130 240 130 240 130 -230 {}
 T {@symname} 0.5 -16 0 0 0.3 0.3 {}
 T {@name} 95 -242 0 0 0.2 0.2 {}
@@ -37,6 +37,6 @@ T {ui_PAD2CORE[1]} -125 84 2 1 0.25 0.25 {}
 T {ui_PAD2CORE[2]} -125 44 2 1 0.25 0.25 {}
 T {analog_io_padres[0]} -125 -36 2 1 0.25 0.25 {}
 T {analog_io_padres[1]} -125 -76 2 1 0.25 0.25 {}
-T {analog_io_padres[2]} -125 -116 2 1 0.25 0.25 {}
-T {analog_io_padres[3]} -125 -156 2 1 0.25 0.25 {}
-T {analog_io_padres[4]} -125 -196 2 1 0.25 0.25 {}
+T {analog_io[2]} -125 -116 2 1 0.25 0.25 {}
+T {analog_io[3]} -125 -156 2 1 0.25 0.25 {}
+T {analog_io[4]} -125 -196 2 1 0.25 0.25 {}

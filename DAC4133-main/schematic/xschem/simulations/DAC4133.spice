@@ -1,10 +1,10 @@
 ** sch_path: /home/designer/shared/libs/IHP__DAC4133/DAC4133-main/schematic/xschem/DAC4133.sch
-.subckt DAC4133 VSS VDD ui_PAD2CORE[1] ui_PAD2CORE[0] ui_PAD2CORE[2] analog_io_padres[1] analog_io_padres[0] analog_io_padres[3]
-+ analog_io_padres[2] analog_io_padres[4]
+.subckt DAC4133 VDD VSS analog_io[4] analog_io[2] ui_PAD2CORE[0] ui_PAD2CORE[1] ui_PAD2CORE[2] analog_io_padres[1]
++ analog_io_padres[0] analog_io[3]
 *.PININFO VSS:B VDD:B ui_PAD2CORE[1]:B ui_PAD2CORE[0]:B ui_PAD2CORE[2]:B analog_io_padres[1]:B analog_io_padres[0]:B
-*+ analog_io_padres[3]:B analog_io_padres[2]:B analog_io_padres[4]:B
-x1 ui_PAD2CORE[0] ui_PAD2CORE[1] ui_PAD2CORE[2] analog_io_padres[0] analog_io_padres[1] analog_io_padres[2] analog_io_padres[3]
-+ analog_io_padres[4] VDD VSS DAC4133_top
+*+ analog_io[3]:B analog_io[2]:B analog_io[4]:B
+x1 ui_PAD2CORE[0] ui_PAD2CORE[1] ui_PAD2CORE[2] analog_io_padres[0] analog_io_padres[1] analog_io[2] analog_io[3] analog_io[4] VDD
++ VSS DAC4133_top
 DD1 VSS ui_PAD2CORE[0] dantenna l=0.78u w=0.78u
 DD2 VSS ui_PAD2CORE[1] dantenna l=0.78u w=0.78u
 .ends
